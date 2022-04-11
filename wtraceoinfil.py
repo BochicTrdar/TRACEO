@@ -124,11 +124,11 @@ def wtraceoinfil(filename=None, thetitle=None, source_info=None, surface_info=No
        fid.write(str(aproperties[4]));fid.write('\n')
        for i in range(nati):
           fid.write(str(xati[0][i]));fid.write(" ")
-	  fid.write(str(xati[1][i]));fid.write('\n')
+          fid.write(str(xati[1][i]));fid.write('\n')
     elif aptype == 'N':
        for i in range(nati):
           fid.write(str(xati[0][i]));fid.write(" ")
-	  fid.write(str(xati[1][i]));fid.write(" ")
+          fid.write(str(xati[1][i]));fid.write(" ")
           fid.write(str(aproperties[0][i]));fid.write(" ")
           fid.write(str(aproperties[1][i]));fid.write(" ")
           fid.write(str(aproperties[2][i]));fid.write(" ")
@@ -145,7 +145,7 @@ def wtraceoinfil(filename=None, thetitle=None, source_info=None, surface_info=No
        fid.write('1 ');fid.write(str(nz));fid.write('\n')
        for i in range(nz):
           fid.write(str(z[i]));fid.write(" ")
-	  fid.write(str(c[i]));fid.write('\n')    
+          fid.write(str(c[i]));fid.write('\n')    
     elif cdist == 'c(r,z)':
        nz = z.size
        nr = r.size
@@ -159,8 +159,8 @@ def wtraceoinfil(filename=None, thetitle=None, source_info=None, surface_info=No
        fid.write('\n')
        for i in range(nz):
            for j in range(nr):
-	      fid.write(str(c[i,j])),fid.write(" ")
-	   fid.write("\n")
+               fid.write(str(c[i,j])),fid.write(" ")
+           fid.write("\n")
     else:
        print('Unknown sound speed distribution...')
     fid.write(separation_line);fid.write("\n")
@@ -170,16 +170,16 @@ def wtraceoinfil(filename=None, thetitle=None, source_info=None, surface_info=No
        for i in range(nobj):
           fid.write('\'');fid.write(otype[i]);fid.write('\'\n')
           fid.write('\'');fid.write( obju[i]);fid.write('\'\n')
-	  fid.write(str(npobj[i]));fid.write('\n')
-	  fid.write(str(oproperties[i][0]));fid.write(" ")
+          fid.write(str(npobj[i]));fid.write('\n')
+          fid.write(str(oproperties[i][0]));fid.write(" ")
           fid.write(str(oproperties[i][1]));fid.write(" ")
           fid.write(str(oproperties[i][2]));fid.write(" ")
           fid.write(str(oproperties[i][3]));fid.write(" ")
           fid.write(str(oproperties[i][4]));fid.write('\n')
-	  for j in range(npobj[i]):
-	     fid.write(str(xobj[i][0][j]));fid.write(" ")
-	     fid.write(str(xobj[i][1][j]));fid.write(" ")
-	     fid.write(str(xobj[i][2][j]));fid.write("\n")
+          for j in range(npobj[i]):
+              fid.write(str(xobj[i][0][j]));fid.write(" ")
+              fid.write(str(xobj[i][1][j]));fid.write(" ")
+              fid.write(str(xobj[i][2][j]));fid.write("\n")
     fid.write(separation_line);fid.write("\n")
     
     fid.write('\'');fid.write(btype) ;fid.write('\'\n')
@@ -197,16 +197,16 @@ def wtraceoinfil(filename=None, thetitle=None, source_info=None, surface_info=No
        fid.write(str(bproperties[4]));fid.write('\n')
        for i in range(nbty):
           fid.write(str(xbty[0][i]));fid.write(" ")
-	  fid.write(str(xbty[1][i]));fid.write('\n')
+          fid.write(str(xbty[1][i]));fid.write('\n')
     elif aptype == 'N':
        for i in range(nbty):
-          fid.write(str(xbty[0][i]));fid.write(" ")
-	  fid.write(str(xbty[1][i]));fid.write(" ")
-          fid.write(str(bproperties[0][i]));fid.write(" ")
-          fid.write(str(bproperties[1][i]));fid.write(" ")
-          fid.write(str(bproperties[2][i]));fid.write(" ")
-          fid.write(str(bproperties[3][i]));fid.write(" ")
-          fid.write(str(bproperties[4][i]));fid.write('\n')	  	  
+           fid.write(str(xbty[0][i]));fid.write(" ")
+           fid.write(str(xbty[1][i]));fid.write(" ")
+           fid.write(str(bproperties[0][i]));fid.write(" ")
+           fid.write(str(bproperties[1][i]));fid.write(" ")
+           fid.write(str(bproperties[2][i]));fid.write(" ")
+           fid.write(str(bproperties[3][i]));fid.write(" ")
+           fid.write(str(bproperties[4][i]));fid.write('\n')	  	  
     else:
        print('Unknown bottom properties...')
     
