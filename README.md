@@ -4,6 +4,8 @@ Python Tools for the TRACEO ray tracing model
 Get the TRACEO model first! 
 http://www.siplab.fct.ualg.pt/models.shtml
 
+Want to see what the model is capable of? Check https://github.com/PedroMDiniz/traceotools
+
 Don't like it? Don't use it. 
 
 Orlando Camargo Rodríguez
