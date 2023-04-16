@@ -6,6 +6,8 @@ http://www.siplab.fct.ualg.pt/models.shtml
 
 Want to see what the model is capable of? Check https://github.com/PedroMDiniz/traceotools
 
+Looking for a C version? Check https://github.com/EyNuel/cTraceo
+
 Don't like it? Don't use it. 
 
 Orlando Camargo Rodríguez
